@@ -1,0 +1,33 @@
+{
+  "source": "agent",
+  "sweep": {
+    "0.30": {
+      "n": 300,
+      "accuracy": 0.8666666666666667,
+      "automation_rate": 0.7333333333333333,
+      "missed_incident_rate": 0.0,
+      "false_escalation_rate": 0.24
+    },
+    "0.50": {
+      "n": 300,
+      "accuracy": 0.8666666666666667,
+      "automation_rate": 0.7266666666666667,
+      "missed_incident_rate": 0.0,
+      "false_escalation_rate": 0.25333333333333335
+    },
+    "0.70": {
+      "n": 300,
+      "accuracy": 0.8666666666666667,
+      "automation_rate": 0.6966666666666667,
+      "missed_incident_rate": 0.0,
+      "false_escalation_rate": 0.31333333333333335
+    },
+    "0.90": {
+      "n": 300,
+      "accuracy": 0.8666666666666667,
+      "automation_rate": 0.33,
+      "missed_incident_rate": 0.0,
+      "false_escalation_rate": 0.9466666666666667
+    }
+  }
+}

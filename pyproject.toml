@@ -1,0 +1,57 @@
+[project]
+name = "soc-triage-agent"
+version = "0.1.0"
+description = "A SOC alert-triage agent that knows when to escalate to a human instead of acting alone, measured against a rule-based baseline and a no-tools ablation."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Aphelion07" }]
+keywords = ["security", "soc", "agent", "triage", "human-in-the-loop", "llm"]
+
+dependencies = [
+    "agent-core @ git+https://github.com/Aphelion07/agent-core.git@7104656b610222055f02e18275b7922495b2cf63",
+    "pydantic>=2.9",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "pytest-cov>=6.0",
+    "ruff>=0.8",
+    "mypy>=1.13",
+    "respx>=0.21",
+]
+
+[project.scripts]
+soc-triage = "soc_triage.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/soc_triage"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+packages = ["soc_triage"]
+mypy_path = "src"
+strict = true
+warn_return_any = false

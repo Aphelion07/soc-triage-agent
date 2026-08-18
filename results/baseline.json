@@ -1,0 +1,1513 @@
+{
+  "source": "baseline",
+  "threshold": 0.7,
+  "metrics": {
+    "n": 300,
+    "accuracy": 0.9333333333333333,
+    "automation_rate": 0.45666666666666667,
+    "missed_incident_rate": 0.0,
+    "false_escalation_rate": 0.31333333333333335
+  },
+  "verdicts": {
+    "a0118": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9299999999999999
+    },
+    "a0165": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9
+    },
+    "a0046": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.96
+    },
+    "a0189": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.78
+    },
+    "a0045": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0225": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0014": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0181": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5800000000000001
+    },
+    "a0158": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8300000000000001
+    },
+    "a0295": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0254": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.68
+    },
+    "a0026": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0212": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.77
+    },
+    "a0231": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.85
+    },
+    "a0219": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.77
+    },
+    "a0190": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.78
+    },
+    "a0151": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8300000000000001
+    },
+    "a0232": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.95
+    },
+    "a0251": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0072": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.72
+    },
+    "a0091": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.98
+    },
+    "a0089": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.98
+    },
+    "a0250": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.65
+    },
+    "a0110": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9299999999999999
+    },
+    "a0217": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.88
+    },
+    "a0069": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.6000000000000001
+    },
+    "a0274": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.6499999999999999
+    },
+    "a0103": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0171": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9
+    },
+    "a0184": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.65
+    },
+    "a0200": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0255": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0161": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.84
+    },
+    "a0136": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.9900000000000001
+    },
+    "a0121": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.63
+    },
+    "a0117": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.98
+    },
+    "a0007": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.9
+    },
+    "a0061": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8500000000000001
+    },
+    "a0085": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.67
+    },
+    "a0209": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.95
+    },
+    "a0129": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.89
+    },
+    "a0277": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.57
+    },
+    "a0122": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.92
+    },
+    "a0067": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.6700000000000002
+    },
+    "a0285": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.59
+    },
+    "a0269": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.82
+    },
+    "a0258": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0033": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.95
+    },
+    "a0022": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.6699999999999999
+    },
+    "a0299": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0199": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.65
+    },
+    "a0132": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.81
+    },
+    "a0053": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0105": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.85
+    },
+    "a0215": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0268": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.65
+    },
+    "a0052": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0116": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.98
+    },
+    "a0024": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0071": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8
+    },
+    "a0138": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.56
+    },
+    "a0008": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.61
+    },
+    "a0025": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.66
+    },
+    "a0090": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0169": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.91
+    },
+    "a0005": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.96
+    },
+    "a0235": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0083": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8500000000000001
+    },
+    "a0178": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.99
+    },
+    "a0205": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0019": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0152": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0167": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9
+    },
+    "a0191": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.55
+    },
+    "a0108": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.85
+    },
+    "a0276": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0284": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.57
+    },
+    "a0056": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.96
+    },
+    "a0290": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.57
+    },
+    "a0068": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0187": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.83
+    },
+    "a0242": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0252": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0075": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.9400000000000001
+    },
+    "a0081": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0275": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0111": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0141": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0142": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.9
+    },
+    "a0102": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8599999999999999
+    },
+    "a0262": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.78
+    },
+    "a0149": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.65
+    },
+    "a0044": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0065": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.73
+    },
+    "a0237": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0227": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.77
+    },
+    "a0029": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.58
+    },
+    "a0036": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0273": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.6499999999999999
+    },
+    "a0297": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.6499999999999999
+    },
+    "a0015": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0034": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0060": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.88
+    },
+    "a0020": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.59
+    },
+    "a0048": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.89
+    },
+    "a0279": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.6499999999999999
+    },
+    "a0076": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0264": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.65
+    },
+    "a0146": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.62
+    },
+    "a0031": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0140": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.86
+    },
+    "a0099": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.99
+    },
+    "a0003": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0228": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0011": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.95
+    },
+    "a0148": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8500000000000001
+    },
+    "a0204": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8999999999999999
+    },
+    "a0123": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.7
+    },
+    "a0079": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8600000000000001
+    },
+    "a0135": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.63
+    },
+    "a0027": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.6699999999999999
+    },
+    "a0263": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0097": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0286": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0094": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0185": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8999999999999999
+    },
+    "a0078": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0021": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0017": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.52
+    },
+    "a0098": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8599999999999999
+    },
+    "a0080": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0126": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.54
+    },
+    "a0210": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.95
+    },
+    "a0002": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.96
+    },
+    "a0145": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.55
+    },
+    "a0137": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.9400000000000001
+    },
+    "a0260": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.98
+    },
+    "a0283": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.73
+    },
+    "a0144": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.78
+    },
+    "a0296": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0006": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.62
+    },
+    "a0179": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0095": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0054": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.88
+    },
+    "a0278": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.6499999999999999
+    },
+    "a0119": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.98
+    },
+    "a0156": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0271": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0030": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.63
+    },
+    "a0057": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0038": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0018": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.87
+    },
+    "a0224": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0201": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.7599999999999999
+    },
+    "a0222": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.85
+    },
+    "a0293": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0188": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.95
+    },
+    "a0282": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.74
+    },
+    "a0182": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.7
+    },
+    "a0096": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8599999999999999
+    },
+    "a0226": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.85
+    },
+    "a0218": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.77
+    },
+    "a0193": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0267": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0074": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0196": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8999999999999999
+    },
+    "a0166": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.98
+    },
+    "a0109": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.85
+    },
+    "a0203": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8999999999999999
+    },
+    "a0028": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.99
+    },
+    "a0192": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.98
+    },
+    "a0058": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.95
+    },
+    "a0157": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.91
+    },
+    "a0236": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.77
+    },
+    "a0114": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0256": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0035": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.96
+    },
+    "a0234": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8999999999999999
+    },
+    "a0012": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.51
+    },
+    "a0001": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.95
+    },
+    "a0051": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.88
+    },
+    "a0143": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.97
+    },
+    "a0082": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0155": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9
+    },
+    "a0249": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0063": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.52
+    },
+    "a0009": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0253": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0248": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0288": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.51
+    },
+    "a0147": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.89
+    },
+    "a0170": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.91
+    },
+    "a0127": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.9500000000000001
+    },
+    "a0159": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8300000000000001
+    },
+    "a0177": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9
+    },
+    "a0163": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0291": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.73
+    },
+    "a0112": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.98
+    },
+    "a0150": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.96
+    },
+    "a0153": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.84
+    },
+    "a0183": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0139": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0246": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0047": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.95
+    },
+    "a0084": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8
+    },
+    "a0186": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.55
+    },
+    "a0221": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8999999999999999
+    },
+    "a0243": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.7
+    },
+    "a0175": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.99
+    },
+    "a0298": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0087": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0198": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.64
+    },
+    "a0206": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0202": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.95
+    },
+    "a0266": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.78
+    },
+    "a0101": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.98
+    },
+    "a0043": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0050": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.96
+    },
+    "a0270": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.7
+    },
+    "a0106": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0240": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.99
+    },
+    "a0280": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0100": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.78
+    },
+    "a0272": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0197": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.68
+    },
+    "a0042": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.89
+    },
+    "a0207": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.53
+    },
+    "a0160": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0223": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9199999999999999
+    },
+    "a0086": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.9100000000000001
+    },
+    "a0010": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.55
+    },
+    "a0088": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.88
+    },
+    "a0040": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.95
+    },
+    "a0016": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0032": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.89
+    },
+    "a0173": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.84
+    },
+    "a0162": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0133": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.9
+    },
+    "a0077": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0049": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0023": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.95
+    },
+    "a0176": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.98
+    },
+    "a0134": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.78
+    },
+    "a0213": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.85
+    },
+    "a0039": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.87
+    },
+    "a0238": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0239": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.73
+    },
+    "a0154": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.91
+    },
+    "a0125": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.89
+    },
+    "a0168": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0093": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.78
+    },
+    "a0300": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.5
+    },
+    "a0113": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9299999999999999
+    },
+    "a0059": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.96
+    },
+    "a0037": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0289": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.6
+    },
+    "a0245": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0130": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.6000000000000001
+    },
+    "a0124": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8300000000000001
+    },
+    "a0220": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8999999999999999
+    },
+    "a0115": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7899999999999999
+    },
+    "a0265": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.78
+    },
+    "a0208": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.7
+    },
+    "a0004": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0229": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8999999999999999
+    },
+    "a0013": {
+      "malicious": true,
+      "severity": "low",
+      "confidence": 0.61
+    },
+    "a0211": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.77
+    },
+    "a0247": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0180": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.9
+    },
+    "a0128": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.67
+    },
+    "a0281": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0120": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.85
+    },
+    "a0172": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.8300000000000001
+    },
+    "a0259": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0041": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0194": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0131": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.65
+    },
+    "a0214": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.95
+    },
+    "a0066": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.68
+    },
+    "a0174": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.99
+    },
+    "a0233": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0092": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.94
+    },
+    "a0241": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.98
+    },
+    "a0230": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 1.0
+    },
+    "a0292": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.57
+    },
+    "a0064": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8
+    },
+    "a0244": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.98
+    },
+    "a0055": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.96
+    },
+    "a0287": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.55
+    },
+    "a0062": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.8400000000000001
+    },
+    "a0257": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 0.9
+    },
+    "a0261": {
+      "malicious": true,
+      "severity": "high",
+      "confidence": 0.85
+    },
+    "a0216": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0104": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.85
+    },
+    "a0164": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.91
+    },
+    "a0294": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7
+    },
+    "a0107": {
+      "malicious": false,
+      "severity": "none",
+      "confidence": 0.7899999999999999
+    },
+    "a0195": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.65
+    },
+    "a0070": {
+      "malicious": true,
+      "severity": "critical",
+      "confidence": 1.0
+    },
+    "a0073": {
+      "malicious": true,
+      "severity": "medium",
+      "confidence": 0.67
+    }
+  }
+}
