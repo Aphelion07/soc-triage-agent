@@ -10,6 +10,7 @@ from pathlib import Path
 import pytest
 
 from soc_triage import cli
+from soc_triage.escalation import EscalationPolicy
 
 _ALERT_ROWS = [
     {
@@ -103,6 +104,35 @@ def test_sweep_reads_a_saved_verdicts_file(tmp_path: Path) -> None:
 
     result = json.loads(out.read_text())
     assert set(result["sweep"]) == {"0.30", "0.70"}
+
+
+def test_escalation_policy_flags_override_defaults() -> None:
+    args = cli._parse_args(
+        [
+            "baseline",
+            "--confidence-threshold",
+            "0.3",
+            "--always-escalate-criticality",
+            "high",
+            "--always-escalate-criticality",
+            "medium,low",
+        ]
+    )
+
+    policy = cli._build_escalation_policy(args)
+
+    assert policy.confidence_threshold == 0.3
+    assert policy.always_escalate_criticalities == frozenset({"high", "medium", "low"})
+
+
+def test_escalation_policy_flags_default_to_the_policy_defaults() -> None:
+    args = cli._parse_args(["baseline"])
+    default_policy = EscalationPolicy()
+
+    policy = cli._build_escalation_policy(args)
+
+    assert policy.confidence_threshold == default_policy.confidence_threshold
+    assert policy.always_escalate_criticalities == default_policy.always_escalate_criticalities
 
 
 def test_missing_subcommand_exits() -> None:

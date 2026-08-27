@@ -97,6 +97,8 @@ Wiring `agent-core` up as this project's first real downstream dependency (`agen
 
 A triage run that never produces a verdict at all (the model exhausts its step budget without calling `submit_verdict`) is treated as confidence `0.0`, which forces escalation under any real threshold - the safe default is "ask a human," not "assume benign because the loop ran out of steps."
 
+Both `baseline` and `agent` expose `EscalationPolicy`'s fields as flags - `--confidence-threshold` and `--always-escalate-criticality` (repeatable, or comma-separated) - so the threshold sweep in finding 3, and any run with a different always-escalate set, is reproducible from the command line instead of editing `escalation.py`'s defaults.
+
 ---
 
 ## Quickstart
@@ -126,6 +128,12 @@ Re-score a saved run at other escalation thresholds without touching the model a
 
 ```bash
 soc-triage sweep --verdicts results/agent_with_tools.json --thresholds 0.3,0.5,0.7,0.9
+```
+
+Or run a triage pass under a different escalation policy directly, without editing `escalation.py`:
+
+```bash
+soc-triage baseline --confidence-threshold 0.3 --always-escalate-criticality high,critical
 ```
 
 Or with no GPU and no model at all - exercises the full tool-calling loop and escalation policy against a scripted backend, which is what CI's smoke job runs:

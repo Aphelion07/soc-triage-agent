@@ -67,10 +67,28 @@ def _write_json(out_path: str, payload: dict[str, Any]) -> None:
     print(f"\nwrote {path}")
 
 
+def _build_escalation_policy(args: argparse.Namespace) -> EscalationPolicy:
+    """Builds the policy that ``baseline`` and ``agent`` score against,
+    letting ``--confidence-threshold`` and ``--always-escalate-criticality``
+    override ``EscalationPolicy``'s defaults - the same values the README's
+    threshold sweep used to require editing ``escalation.py`` to change.
+    """
+    kwargs: dict[str, Any] = {"confidence_threshold": args.confidence_threshold}
+    if args.always_escalate_criticality is not None:
+        criticalities = {
+            c.strip()
+            for group in args.always_escalate_criticality
+            for c in group.split(",")
+            if c.strip()
+        }
+        kwargs["always_escalate_criticalities"] = frozenset(criticalities)
+    return EscalationPolicy(**kwargs)
+
+
 def _run_baseline(args: argparse.Namespace) -> None:
     alerts = load_alerts(args.data)
     verdicts = {a.id: triage_baseline(a) for a in alerts}
-    policy = EscalationPolicy(confidence_threshold=args.threshold)
+    policy = _build_escalation_policy(args)
     outcomes = outcomes_for_policy(alerts, verdicts, policy)
     metrics = compute_metrics(outcomes)
     _print_metrics(metrics)
@@ -78,7 +96,7 @@ def _run_baseline(args: argparse.Namespace) -> None:
         args.out,
         {
             "source": "baseline",
-            "threshold": args.threshold,
+            "threshold": args.confidence_threshold,
             "metrics": _metrics_to_dict(metrics),
             "verdicts": {aid: _verdict_to_dict(v) for aid, v in verdicts.items()},
         },
@@ -147,7 +165,7 @@ async def _run_agent_async(args: argparse.Namespace) -> None:
     finally:
         await backend.aclose()
 
-    policy = EscalationPolicy(confidence_threshold=args.threshold)
+    policy = _build_escalation_policy(args)
     outcomes = outcomes_for_policy(alerts, verdicts, policy)
     metrics = compute_metrics(outcomes)
     print()
@@ -160,7 +178,7 @@ async def _run_agent_async(args: argparse.Namespace) -> None:
             "source": "agent",
             "model": args.model,
             "use_tools": use_tools,
-            "threshold": args.threshold,
+            "threshold": args.confidence_threshold,
             "failures": failures,
             "llm_calls_total": llm_calls_total,
             "tool_calls_total": tool_calls_total,
@@ -200,7 +218,17 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
 
     baseline = subparsers.add_parser("baseline", help="Run the rule-based triage baseline.")
     baseline.add_argument("--data", default="data/alerts.jsonl")
-    baseline.add_argument("--threshold", type=float, default=0.7)
+    baseline.add_argument("--confidence-threshold", type=float, default=0.7)
+    baseline.add_argument(
+        "--always-escalate-criticality",
+        action="append",
+        default=None,
+        metavar="CRITICALITY",
+        help=(
+            "Asset criticality that always escalates regardless of confidence. "
+            "Repeatable, or comma-separated (default: critical)."
+        ),
+    )
     baseline.add_argument("--out", default="results/baseline.json")
     baseline.set_defaults(func=_run_baseline)
 
@@ -211,7 +239,17 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         "--no-tools", action="store_true", help="Ablation: decide from alert text alone"
     )
     agent.add_argument("--max-steps", type=int, default=6)
-    agent.add_argument("--threshold", type=float, default=0.7)
+    agent.add_argument("--confidence-threshold", type=float, default=0.7)
+    agent.add_argument(
+        "--always-escalate-criticality",
+        action="append",
+        default=None,
+        metavar="CRITICALITY",
+        help=(
+            "Asset criticality that always escalates regardless of confidence. "
+            "Repeatable, or comma-separated (default: critical)."
+        ),
+    )
     agent.add_argument("--fake", action="store_true")
     agent.add_argument("--out", default="results/agent.json")
     agent.set_defaults(func=_run_agent)
